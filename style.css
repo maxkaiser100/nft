@@ -1,0 +1,158 @@
+
+
+html {
+    font-size: 18px;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+
+p {
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    margin: 5px auto;
+
+}
+
+h1 {
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+h1:hover {
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.outerBox {
+    display: flex;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    justify-content: center;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.pictureBox {
+  position: relative;
+    border-radius: 10px;
+    width: 100%;   
+}
+
+.pictureBoxImage {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 98%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pictureBox:hover .overlay {
+    opacity: 1;
+    background-color: rgba(0, 255, 247, .5);
+}
+
+.icon {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clockBox {
+    display: flex;
+    justify-content: space-between;
+   border-bottom: 1px solid rgba(62, 78, 101, .70);
+   padding-bottom: 15px;
+   margin: 20px 0;
+
+}
+
+.clockBox p {
+    font-size: smaller;
+}
+
+.clockBoxETH {
+    display: flex;
+    align-items: center;
+}
+
+.clockBoxETH p {
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+}
+
+.clockBoxETH img {
+    height: 20px;
+    padding-right: 5px;
+}
+   
+
+.clockBoxClock {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.clockBoxClock img {
+   height: 20px;
+   width: auto;
+   padding-right: 5px;
+}
+
+.attributionBox {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.attributionBox img {
+    height: 30px;
+    width: auto;
+    border: 1px white solid;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+.attributionBox p {
+    font-size: 14px;
+    margin: 0px 0px;
+}
+
+.attributionBox a:link {
+    color: white;
+    text-decoration: none;
+}
+
+
+.attributionBox a:hover {
+    color: hsl(178, 100%, 50%);
+    text-decoration: none;
+}
+
